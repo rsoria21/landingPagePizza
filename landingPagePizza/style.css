@@ -13,11 +13,17 @@ body {
 h1 {
   font-size: 4.25rem;
   margin: 0;
+  -webkit-animation: fade 3s;
+  -moz-animation: fade 3s;
+  animation: fade 3s;
 }
 
 h2 {
   font-size: 2.25rem;
   margin: 0;
+  -webkit-animation: fade 4.5s;
+  -moz-animation: fade 4.5s;
+  animation: fade 4.5s;
 }
 
 a {
@@ -37,6 +43,7 @@ a {
 .logo {
   padding: 3rem 2rem;
   height: 30%;
+  font-size: 7rem;
 }
 
 .button {
@@ -44,6 +51,9 @@ a {
   border-radius: 10rem;
   font-weight: 500;
   cursor: pointer;
+  -webkit-animation: buttonBounce 2s infinite alternate;
+  -moz-animation: buttonBounce 2s infinite alternate;
+  animation: buttonBounce 2s infinite alternate;
 }
 
 .button:hover {
@@ -72,6 +82,35 @@ a {
     padding: 1rem 3rem;
     border-radius: 10rem;
     font-weight: 500;
+  }
+}
+
+/* Button Animation Keyframes */
+
+@-webkit-keyframes buttonBounce {
+  to {
+    -webkit-transform: scale(1.2);
+  }
+}
+@-moz-keyframes buttonBounce {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+@keyframes buttonBounce {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Text Animation Keyframes */
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
