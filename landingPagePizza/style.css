@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: aliceblue;
+  background-color: black;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 200;
   margin: 0;
   -webkit-animation: fade 4.5s;
   -moz-animation: fade 4.5s;
@@ -43,7 +45,8 @@ a {
 .logo {
   padding: 3rem 2rem;
   height: 30%;
-  font-size: 7rem;
+  font-size: 5.75rem;
+  transform: rotate(-44deg);
 }
 
 .button {
@@ -82,6 +85,10 @@ a {
     padding: 1rem 3rem;
     border-radius: 10rem;
     font-weight: 500;
+  }
+
+  .logo {
+    font-size: 3.75rem;
   }
 }
 
